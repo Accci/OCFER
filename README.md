@@ -12,13 +12,9 @@
 下<br>
 
 ## 预训练模型
-**Fer2013**:`checkpoint/
-              Fer2013/
-              best_checkpoint.tar`<br>
+**Fer2013**:`checkpoint/Fer2013/best_checkpoint.tar`<br>
 
-**AffectNet**: `checkpoint/
-                 AffectNet/
-                  best_checkpoint.tar`<br>
+**AffectNet**: `checkpoint/AffectNet/best_checkpoint.tar`<br>
 ## train
 注意训练单类模型请修改`paramers.py`文件中的`target_class`<br>
 `python train_fer2013.py`
