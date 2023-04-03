@@ -7,8 +7,8 @@ This repository contains One-Class Classification for Facial Expression Recognit
 
 Data<br>
 ## data
-**FER2013**：[https://www.kaggle.com/datasets/deadskull7/fer2013]<br>
-**AffectNet**：[https://www.kaggle.com/datasets/arafatshovon/affectnet]<br>
+**FER2013**：[https://www.kaggle.com/datasets/deadskull7/fer2013](https://www.kaggle.com/datasets/deadskull7/fer2013])<br>
+**AffectNet**：[https://www.kaggle.com/datasets/arafatshovon/affectnet](https://www.kaggle.com/datasets/arafatshovon/affectnet)<br>
 Download these two datasets and place them in the`data/`directory.<br>
 
 ## 预训练模型
