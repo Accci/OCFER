@@ -5,23 +5,10 @@ class hyperparameters():
     def __init__(self):
         self.bs = 64
         self.epoch = 10
-        self.lr = 1e-5
-        self.sigma = 0.001
-        self.sigma1 = 0.0000000000000000000000000000000000000001
-        self.D = 512
-        self.N = 0.5
-        self.gamma = float(1/512.0)
-        self.alpha = 1.0
-
-        self.img_chnl = 1
-        self.img_size = 48
-
         self.gpu_flag = True
-        self.verbose = False
-        self.pre_trained_flag = False
-        self.intensity_normalization = False
+        self.target_class = 0
         self.arch ='CBAM'
-        self.classifier_type = 'OC-CNN'
+
 
 
         self.HEADER = '\033[95m'
