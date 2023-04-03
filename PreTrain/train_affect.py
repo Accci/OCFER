@@ -16,7 +16,7 @@ from utils import (Logger, get_model, mixup_criterion, mixup_data, random_seed, 
 
 warnings.filterwarnings("ignore")
 
-parser = argparse.ArgumentParser(description='USTC Computer Vision Final Project')
+parser = argparse.ArgumentParser(description='')
 parser.add_argument('--arch', default="CBAM", type=str)
 parser.add_argument('--epochs', default=200, type=int)
 parser.add_argument('--batch_size', default=32, type=int)
