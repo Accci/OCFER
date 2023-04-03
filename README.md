@@ -1,11 +1,9 @@
 # OCFER
 
-The pre-trained model's data augmentation and hyperparameter settings were referenced from this repository: [https://github.com/LetheSec/Fer2013-Facial-Emotion-Recognition-Pytorch]. We greatly appreciate it.
-Please refer to the `PreTrain` folder for more details. <br>
-在此非常感谢<br>
-Please refer to the `PreTrain` folder for more details.
+The pre-trained model's data augmentation and hyperparameter settings were referenced from this repository: [https://github.com/LetheSec/Fer2013-Facial-Emotion-Recognition-Pytorch]. We greatly appreciate it.<br>
+Please refer to the `PreTrain` folder for more details.<br>
 ***
-This repository contains One-Class Classification for Facial Expression Recognition.
+This repository contains One-Class Classification for Facial Expression Recognition.<br>
 
 Data<br>
 ## data
