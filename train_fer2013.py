@@ -11,7 +11,7 @@ best_acc = 0
 def main():
     global best_acc
     for i in range(haper_para.epoch):
-        train_loader,test_loader,val_loader= get_dataloaders('data/fer2013.csv',bs = hyper_para.bs,target_class=4)
+        train_loader,test_loader,val_loader= get_dataloaders('data/fer2013.csv',bs = hyper_para.bs,target_class=hyper_para.target_class)
         model = get_model(hyper_para.arch)
         if(hyper_para.gpu_flag):
             model.cuda()
@@ -20,7 +20,7 @@ def main():
         if val_acc > best_acc:
             best_acc = max(val_acc, best_acc)
             print(f"save the best model: {best_acc}")
-            with open('Fer2013_class4_model.pkl', 'wb') as f:
+            with open(f'Fer2013_class{hyper_para.target_class}_model.pkl', 'wb') as f:
                 pickle.dump(clf, f)
         
    
