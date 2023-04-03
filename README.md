@@ -18,5 +18,5 @@
 ## train
 注意训练单类模型请修改`paramers.py`文件中的`target_class`<br>
 `python train_fer2013.py`<br>
-注意`AffectNet`中的`targetz_class`是文件夹名称，直接在`train_affect.py`中修改<br>
+注意`AffectNet`中的`target_class`是文件夹名称，直接在`train_affect.py`中修改<br>
 `python train_affect.py`<br>
