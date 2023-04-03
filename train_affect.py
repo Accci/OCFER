@@ -12,7 +12,7 @@ best_acc = 0
 def main():
     global best_acc
     for i in range(haper_para.epoch):
-        train_loader,test_loader= get_dataloaders(path='/home/ywq/fer/data/affectnet',bs = hyper_para.bs,target_class='class001')
+        train_loader,test_loader= get_dataloaders(path='/data/affectnet',bs = hyper_para.bs,target_class='class001')
         model = get_model(hyper_para.arch)
         if(hyper_para.gpu_flag):
             model.cuda()
