@@ -14,7 +14,7 @@ class_names = ["Neutral", "Happy", "Sad", "Surprise", "Fear", "Disgust", "Anger"
 checkpoint_name = 'CBAM'
 def main():
     model = CBAM_ResNet18()
-    model.load_state_dict(torch.load('/home/ywq/fer/results/affect/affect1/CBAM_epoch200_bs32_lr0.1_momentum0.9_wd0.0001_seed0_smoothTrue_mixupTrue_schedulerreduce_affect1/checkpoints/best_checkpoint.tar')['model_state_dict'])
+    model.load_state_dict(torch.load('/results/affect/affect1/CBAM_epoch200_bs32_lr0.1_momentum0.9_wd0.0001_seed0_smoothTrue_mixupTrue_schedulerreduce_affect1/checkpoints/best_checkpoint.tar')['model_state_dict'])
     model.cuda()
     model.eval()
     _,val_loader=get_dataloaders()
