@@ -7,11 +7,11 @@
 **AffectNet**：https://www.kaggle.com/datasets/arafatshovon/affectnet
 下载这两个数据集放在- [data]下
 
-##预训练模型
+## 预训练模型
 **Fer2013**:- [checkpoint]
               - [Fer2013]
 **AffectNet**:- [checkpoint]
               - [AffectNet]
-##train
+## train
 注意训练单类模型请修改<span style="background-color: #ddd; color: #fff; padding: 3px 5px;">paramers.py</span>文件中的target_class
 python train_fer2013.py
