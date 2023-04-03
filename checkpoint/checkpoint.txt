@@ -1,0 +1,1 @@
+Move the best_checkpoint.tar of the pre-trained model to the corresponding folder.
