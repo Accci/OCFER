@@ -16,7 +16,7 @@ from utils import (Logger, get_model, mixup_criterion, mixup_data, random_seed, 
 
 warnings.filterwarnings("ignore")
 
-parser = argparse.ArgumentParser(description='USTC Computer Vision Final Project')
+parser = argparse.ArgumentParser(description='')
 parser.add_argument('--arch', default="CBAM", type=str)
 parser.add_argument('--epochs', default=200, type=int)
 parser.add_argument('--batch_size', default=128, type=int)
@@ -29,7 +29,7 @@ parser.add_argument('--label_smooth_value', default=0.1, type=float)
 parser.add_argument('--mixup', default=True, type=eval)
 parser.add_argument('--mixup_alpha', default=1.0, type=float)
 parser.add_argument('--Ncrop', default=True, type=eval)
-parser.add_argument('--data_path', default='data/fer2013.csv', type=str)
+parser.add_argument('--data_path', default='../data/fer2013.csv', type=str)
 parser.add_argument('--results', default='./results/FER2013', type=str)
 parser.add_argument('--save_freq', default=5, type=int)
 parser.add_argument('--resume', default=0, type=int)
