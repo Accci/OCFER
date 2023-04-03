@@ -8,13 +8,13 @@
 下载这两个数据集放在- [data]下
 
 ## 预训练模型
-**Fer2013**:- checkpoint/
-              -Fer2013/
-              -best_checkpoint.tar
+**Fer2013**:checkpoint/
+              Fer2013/
+              best_checkpoint.tar
 
-**AffectNet**:- checkpoint/
-                - AffectNet/
-                  -best_checkpoint.tar
+**AffectNet**: checkpoint/
+                 AffectNet/
+                  best_checkpoint.tar
 ## train
-注意训练单类模型请修改<span style="background-color: #ddd; color: #fff; padding: 3px 5px;">paramers.py</span>文件中的target_class
+注意训练单类模型请修改<span style="background-color: #f2f2f2; padding: 3px 5px;">paramers.py</span>文件中的target_class
 python train_fer2013.py
