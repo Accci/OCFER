@@ -16,5 +16,5 @@
                  AffectNet/
                   best_checkpoint.tar
 ## train
-注意训练单类模型请修改<span style="background-color: #f2f2f2; padding: 3px 5px;">paramers.py</span>文件中的target_class
+注意训练单类模型请修改<span style="background-color: #888; padding: 3px 5px;">paramers.py</span>文件中的target_class
 python train_fer2013.py
