@@ -16,7 +16,7 @@ Download these two datasets and place them in the`data/`directory.<br>
 
 **AffectNet**: `checkpoint/AffectNet/best_checkpoint.tar`<br>
 ## Train
-To train a single-class model, please modify the `paramers.py`in the`target_class`file.<br>
+To train a single-class model, please modify the `target_class`in the`paramers.py`file.<br>
 ```python train_fer2013.py```<br>
 For AffectNet, note that the `target_class` is the folder name; directly modify it in the `train_affect.py` script:<br>
 ```python train_affect.py```<br>
