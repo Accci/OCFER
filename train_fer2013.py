@@ -47,25 +47,18 @@ def train_oc_svm(train_loader,test_loader,val_loader, model):
     train_features = np.concatenate(train_features, axis=0)
     train_labels = np.concatenate(train_labels, axis=0)
     
-#     clf = OneClassSVM(degree = 3, gamma='scale')
-#     clf = OneClassSVM(gamma=1.0)
-#     param_grid = {'nu': [0.01,0.05,0.1,0.15,0.2],
-#               'kernel': ['linear', 'rbf', 'sigmoid','poly']}
-#     scorer = make_scorer(f1_score)
-#     grid_search = GridSearchCV(clf, param_grid, scoring=scorer)
-#     grid_search.fit(train_features,train_labels)
-#     print("Best parameter combination: ", grid_search.best_params_)
-#     print("Best F1 score: ", grid_search.best_score_)
-#     clf = OneClassSVM(nu=grid_search.best_params_['nu'],
-#                     kernel=grid_search.best_params_['kernel'])
-    clf = OneClassSVM(kernel='sigmoid', nu = 0.1)
+    clf = OneClassSVM()
+    param_grid = {'nu': [0.05,0.1,0.15,0.2],
+              'kernel': ['rbf', 'sigmoid','poly']}
+    scorer = make_scorer(f1_score)
+    grid_search = GridSearchCV(clf, param_grid, scoring=scorer)
+    grid_search.fit(train_features,train_labels)
+    print("Best parameter combination: ", grid_search.best_params_)
+    print("Best F1 score: ", grid_search.best_score_)
+    clf = OneClassSVM(nu=grid_search.best_params_['nu'],
+                    kernel=grid_search.best_params_['kernel'])
+#     clf = OneClassSVM(kernel='sigmoid', nu = 0.1)
     clf.fit(train_features)
-    
-#      #保存和加载模型
-#     with open('one_class_svm_disgust_model.pkl', 'wb') as f:
-#         pickle.dump(clf, f)
-#     with open('one_class_svm_anger_model.pkl', 'rb') as f:
-#     model = pickle.load(f)
     
     val_features = []
     val_labels = []
