@@ -2,7 +2,7 @@
 
 预训练模型的数据增强和超参数设置是参考的是这个仓库：https://github.com/LetheSec/Fer2013-Facial-Emotion-Recognition-Pytorch <br>
 在此非常感谢<br>
-详情请看分支`PreTrain`
+详情请看文件夹`PreTrain`
 ***
 这个仓库所包含的内容是One-Class Classification for Facial Expression Recognition<br>
 ## data
