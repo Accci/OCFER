@@ -11,7 +11,7 @@ This repository contains One-Class Classification for Facial Expression Recognit
 **AffectNet**：[https://www.kaggle.com/datasets/arafatshovon/affectnet](https://www.kaggle.com/datasets/arafatshovon/affectnet)<br>
 Download these two datasets and place them in the`data/`directory.<br>
 
-## 预训练模型
+## Pre-trained models
 **Fer2013**:`checkpoint/Fer2013/best_checkpoint.tar`<br>
 
 **AffectNet**: `checkpoint/AffectNet/best_checkpoint.tar`<br>
