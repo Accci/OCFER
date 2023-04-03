@@ -1,11 +1,11 @@
 # OCFER
 
-The pre-trained model's data augmentation and hyperparameter settings were referenced from this repository: [https://github.com/LetheSec/Fer2013-Facial-Emotion-Recognition-Pytorch](https://github.com/LetheSec/Fer2013-Facial-Emotion-Recognition-Pytorch). We greatly appreciate it.<br>
+The pre-trained model's data augmentation and hyperparameter settings were referenced from this repository: [https://github.com/LetheSec/Fer2013-Facial-Emotion-Recognition-Pytorch](https://github.com/LetheSec/Fer2013-Facial-Emotion-Recognition-Pytorch). <br>
+We greatly appreciate it.<br>
 Please refer to the `PreTrain` folder for more details.<br>
 
 This repository contains One-Class Classification for Facial Expression Recognition.<br>
 
-Data<br>
 ## data
 **FER2013**：[https://www.kaggle.com/datasets/deadskull7/fer2013](https://www.kaggle.com/datasets/deadskull7/fer2013])<br>
 **AffectNet**：[https://www.kaggle.com/datasets/arafatshovon/affectnet](https://www.kaggle.com/datasets/arafatshovon/affectnet)<br>
