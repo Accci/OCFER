@@ -18,5 +18,7 @@
                  AffectNet/
                   best_checkpoint.tar`<br>
 ## train
-注意训练单类模型请修改`paramers.py`文件中的target_class<br>
+注意训练单类模型请修改`paramers.py`文件中的`target_class`<br>
 `python train_fer2013.py`
+注意`AffectNet`中的`targetz_class`是文件夹名称，直接在`train_affect.py`中修改
+`python train_affect.py`
