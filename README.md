@@ -1,22 +1,24 @@
 # OCFER
 
-预训练模型的数据增强和超参数设置是参考的是这个仓库：https://github.com/LetheSec/Fer2013-Facial-Emotion-Recognition-Pytorch <br>
+The pre-trained model's data augmentation and hyperparameter settings were referenced from this repository: [https://github.com/LetheSec/Fer2013-Facial-Emotion-Recognition-Pytorch]. We greatly appreciate it.
+Please refer to the `PreTrain` folder for more details. <br>
 在此非常感谢<br>
-详情请看文件夹`PreTrain`
+Please refer to the `PreTrain` folder for more details.
 ***
-这个仓库所包含的内容是One-Class Classification for Facial Expression Recognition<br>
+This repository contains One-Class Classification for Facial Expression Recognition.
+
+Data<br>
 ## data
-**FER2013**：https://www.kaggle.com/datasets/deadskull7/fer2013<br>
-**AffectNet**：https://www.kaggle.com/datasets/arafatshovon/affectnet<br>
-下载这两个数据集放在`data/`
-下<br>
+**FER2013**：[https://www.kaggle.com/datasets/deadskull7/fer2013]<br>
+**AffectNet**：[https://www.kaggle.com/datasets/arafatshovon/affectnet]<br>
+Download these two datasets and place them in the`data/`directory.<br>
 
 ## 预训练模型
 **Fer2013**:`checkpoint/Fer2013/best_checkpoint.tar`<br>
 
 **AffectNet**: `checkpoint/AffectNet/best_checkpoint.tar`<br>
 ## train
-注意训练单类模型请修改`paramers.py`文件中的`target_class`<br>
-`python train_fer2013.py`<br>
-注意`AffectNet`中的`target_class`是文件夹名称，直接在`train_affect.py`中修改<br>
-`python train_affect.py`<br>
+To train a single-class model, please modify the `paramers.py`in the`target_class`file.<br>
+```python train_fer2013.py```<br>
+For AffectNet, note that the `target_class` is the folder name; directly modify it in the `train_affect.py` script:<br>
+```python train_affect.py```<br>
