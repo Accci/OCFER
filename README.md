@@ -2,7 +2,7 @@
 
 The pre-trained model's data augmentation and hyperparameter settings were referenced from this repository: [https://github.com/LetheSec/Fer2013-Facial-Emotion-Recognition-Pytorch](https://github.com/LetheSec/Fer2013-Facial-Emotion-Recognition-Pytorch). We greatly appreciate it.<br>
 Please refer to the `PreTrain` folder for more details.<br>
-***
+---
 This repository contains One-Class Classification for Facial Expression Recognition.<br>
 
 Data<br>
