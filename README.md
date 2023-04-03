@@ -6,16 +6,16 @@
 ## data
 **FER2013**：https://www.kaggle.com/datasets/deadskull7/fer2013<br>
 **AffectNet**：https://www.kaggle.com/datasets/arafatshovon/affectnet<br>
-下载这两个数据集放在<span style="background-color: #444; padding: 3px 5px;">data/</span>下<br>
+下载这两个数据集放在'data/'下<br>
 
 ## 预训练模型
-**Fer2013**:<span style="background-color: #111; padding: 3px 5px;">checkpoint/
+**Fer2013**:'checkpoint/
               Fer2013/
-              best_checkpoint.tar</span><br>
+              best_checkpoint.tar'<br>
 
-**AffectNet**: <span style="background-color: #111; padding: 3px 5px;">checkpoint/
+**AffectNet**: 'checkpoint/
                  AffectNet/
-                  best_checkpoint.tar</span><br>
+                  best_checkpoint.tar'<br>
 ## train
-注意训练单类模型请修改<span style="background-color: #111; padding: 3px 5px;">paramers.py</span>文件中的target_class<br>
-python train_fer2013.py
+注意训练单类模型请修改'paramers.py'文件中的target_class<br>
+'python train_fer2013.py'
