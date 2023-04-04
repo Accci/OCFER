@@ -32,9 +32,6 @@ def main():
             with open(f'Fer2013_class{hyper_para.target_class}_model.pkl', 'wb') as f:
                 pickle.dump(clf, f)
         
-   
-#         eval(haper_para)
-
 def train_oc_svm(train_loader,test_loader,val_loader, model): 
     train_features = []
     train_labels = []
