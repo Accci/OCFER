@@ -33,7 +33,6 @@ def main():
                 pickle.dump(clf, f)
         
    
-#         eval(haper_para)
 
 def train_oc_svm(train_loader,test_loader,model): 
     train_features = []
@@ -56,7 +55,6 @@ def train_oc_svm(train_loader,test_loader,model):
     train_features = np.concatenate(train_features, axis=0)
     train_labels = np.concatenate(train_labels, axis=0)
     
-    clf = OneClassSVM()
     param_grid = {'nu': [0.05,0.1,0.15,0.2],
               'kernel': ['rbf', 'sigmoid','poly']}
     scorer = make_scorer(f1_score)
