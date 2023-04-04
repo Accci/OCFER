@@ -6,11 +6,10 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 from models import *
 import torch.nn.functional as F
-# from dataset import get_dataloaders
 from affectnet import get_dataloaders
 
-# class_names = ["Anger", "Disgust", "Fear", "Happy", "Sad", "Surprised", "Neutral"]
-class_names = ["Neutral", "Happy", "Sad", "Surprise", "Fear", "Disgust", "Anger","Contempt"]
+# class_names = ["Anger", "Disgust", "Fear", "Happy", "Sad", "Surprised", "Neutral"]   #fer2013
+class_names = ["Neutral", "Happy", "Sad", "Surprise", "Fear", "Disgust", "Anger","Contempt"]    #affectnet
 checkpoint_name = 'CBAM'
 def main():
     model = CBAM_ResNet18()
@@ -62,10 +61,6 @@ def main():
     # plt.savefig('cm_{}.png'.format(checkpoint_name))
     plt.savefig("./cm_{}.pdf".format(checkpoint_name))
     plt.close()
-   
-    
-        
-
 
 # 生成混淆矩阵
 
