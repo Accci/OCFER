@@ -188,8 +188,6 @@ class BCNN(nn.Module):
         print(np.shape(x))
         x = x.view(N, 512, 5**2)
         x = (torch.bmm(x, torch.transpose(x, 1, 2)) / (5**2)).view(N,-1)
-        # x = x.view(N, 512**2)
-#         x = torch.sqrt(x + 1e-5)
         x = torch.nn.functional.normalize(torch.sign(x) * torch.sqrt(torch.abs(x)+1e-2))
         x = self.fc(x)
         return x
